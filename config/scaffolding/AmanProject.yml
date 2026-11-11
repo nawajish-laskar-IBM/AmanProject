@@ -7,3 +7,16 @@ packages:
   gitUrl: https://github.com/nawajish-laskar-IBM
   gitUsername: nawajish-laskar-IBM
   gitBranch: main
+services:
+- serviceName: project.aman.integrations:getCurrentDate
+  packages:
+  - name: AmanProject
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1329
+- serviceName: project.aman.streaming.connections:EmbeddedMessaging
+  packages:
+  - name: AmanProject
+    version: "1.0"
